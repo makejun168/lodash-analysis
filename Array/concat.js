@@ -20,27 +20,10 @@
  * console.log(array);
  * // => [1]
  */
-
-import copyArray from '../Utils/copyArray';
-import baseFlatten from '../Utils/baseFlatten';
-import arrayPush from '../Utils/arrayPush';
+import steamroller from '../Utils/steamroller';
 
 function concat() {
-	var length = arguments.length;
-	if (!length) {
-		return [];
-	}
-	var args = Array(length - 1),
-		array = arguments[0],
-		index = length;
-
-	while (index--) {
-		args[index - 1] = arguments[index];
-	}
-	return arrayPush(
-		Array.isArray(array) ? copyArray(array) : [array],
-		baseFlatten(args, 1)
-	);
+	return steamroller([...arguments]);
 }
 
 var array = [1];

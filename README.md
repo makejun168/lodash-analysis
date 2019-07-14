@@ -11,8 +11,6 @@
 
 
 - Array
-    - chunk 将数组（array）拆分成多个 size 长度的区块
-	- * [x]
-	- compact 创建一个新数组，包含原数组中所有的非假值元素。例如false, null, 0, "", undefined, 和 NaN 都是被认为是“假值”。
-	- * [x]
+    - chunk 将数组（array）拆分成多个 size 长度的区块 ![](/static/img/check.png)
+	- compact 创建一个新数组，包含原数组中所有的非假值元素。例如false, null, 0, "", undefined, 和 NaN 都是被认为是“假值”。 ![](/static/img/check.png)
 

@@ -19,5 +19,7 @@
 	- differenceWith 这个方法类似 _.difference，除了它接受一个 comparator （比较器），它调用比较array，values中的元素。 结果值是从第一数组中选择。comparator 调用参数有两个(arrVal, othVal)。这个方法会返回一个新数组。(未实现)
 	- drop 创建一个切片数组，去除array前面的n个元素。（n默认值为1。）![](/static/img/check.png)
 	- dropRight 创建一个切片数组，去除array尾部的n个元素。（n默认值为1。）
-
-
+	- dropRightWhile 创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)。
+	- dropWhile 创建一个切片数组，去除array中从起点开始到 predicate 返回假值结束部分。predicate 会传入3个参数： (value, index, array)。
+	- dropRightWhile 创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)。
+	- fill 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。

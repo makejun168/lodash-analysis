@@ -23,3 +23,18 @@
 	- dropWhile 创建一个切片数组，去除array中从起点开始到 predicate 返回假值结束部分。predicate 会传入3个参数： (value, index, array)。
 	- dropRightWhile 创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)。
 	- fill 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。
+	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
+	- findLastIndex 这个方式类似 _.findIndex， 区别是它是从右到左的迭代集合array中的元素。
+	- head 获取数组 array 的第一个元素。
+
+
+少年负壮气 奋烈自有时
+壮士何慷慨 志向欲八方
+将军陷阵志 有死而无生 (赴死之日 就在今天) 德玛西亚皇子
+百战疲劳壮士哀
+山河不足重 重在遇知己
+金戈铁马定江山
+复仇千里如咫尺
+两度冲阵容救危主
+受命于败军之际 奉命于危难之间
+山高水远 后会有期

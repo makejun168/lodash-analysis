@@ -1,0 +1,23 @@
+{
+	"name": "lodash-analysis",
+	"version": "1.0.0",
+	"description": "",
+	"main": "init.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"initJs": "node init.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/makejun168/lodash-analysis.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/makejun168/lodash-analysis/issues"
+	},
+	"homepage": "https://github.com/makejun168/lodash-analysis#readme",
+	"dependencies": {
+		"cross-env": "^5.2.0"
+	}
+}

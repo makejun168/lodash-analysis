@@ -25,7 +25,7 @@
 	- fill 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。
 	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
 	- findLastIndex 这个方式类似 _.findIndex， 区别是它是从右到左的迭代集合array中的元素。
-	- head 获取数组 array 的第一个元素。
+	- head 获取数组 array 的第一个元素。![](/static/img/check.png)
 	- indexOf 使用 SameValueZero 等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。
 	- initial 获取数组array中除了最后一个元素之外的所有元素（去除数组array中的最后一个元素）。
 	- intersection 创建唯一值的数组，这个数组包含所有给定数组都包含的元素，使用 SameValueZero进行相等性比较。（可以理解为给定数组的交集）

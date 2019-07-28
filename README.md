@@ -32,7 +32,8 @@
 	- intersectionBy 这个方法类似 _.intersection，区别是它接受一个 iteratee 调用每一个arrays的每个值以产生一个值，通过产生的值进行了比较。结果值是从第一数组中选择。iteratee 会传入一个参数：(value)。
 	- intersectionWith 这个方法类似 _.intersection，区别是它接受一个 comparator 调用比较arrays中的元素。结果值是从第一数组中选择。comparator 会传入两个参数：(arrVal, othVal)。
 	- join 将 array 中的所有元素转换为由 separator 分隔的字符串。
-	- last 获取array中的最后一个元素。
+	- last 获取array中的最后一个元素。![](/static/img/check.png)
+	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
 
 
 ### 结尾

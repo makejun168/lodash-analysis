@@ -36,6 +36,7 @@
 	- join 将 array 中的所有元素转换为由 separator 分隔的字符串。
 	- last 获取array中的最后一个元素。![](/static/img/check.png)
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
+	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。![](/static/img/check.png)
 
 
 ### 关于代码测试

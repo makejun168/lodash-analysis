@@ -5,9 +5,11 @@
 
 ### 项目参考
 项目参考的是loadsh官网，文件的目录路径是根据官网API设计的
+项目代码参考和比较 lodash源码内容
 
 ### 项目重要提示
 本项目代码不能用作生产环境，仅供学习参考，欢迎学习交流，谢谢
+
 
 
 - Array
@@ -22,7 +24,7 @@
 	- dropRightWhile 创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)。
 	- dropWhile 创建一个切片数组，去除array中从起点开始到 predicate 返回假值结束部分。predicate 会传入3个参数： (value, index, array)。
 	- dropRightWhile 创建一个切片数组，去除array中从 predicate 返回假值开始到尾部的部分。predicate 会传入3个参数： (value, index, array)。
-	- fill 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。
+	- fill 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）。![](/static/img/check.png)
 	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。
 	- findLastIndex 这个方式类似 _.findIndex， 区别是它是从右到左的迭代集合array中的元素。
 	- head 获取数组 array 的第一个元素。![](/static/img/check.png)
@@ -35,6 +37,9 @@
 	- last 获取array中的最后一个元素。![](/static/img/check.png)
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
 
+
+### 关于代码测试
+代码测试还没开始使用单元测试的工具进行检测，有提供单元测试的朋友也可以提交issues
 
 ### 结尾
 - 少年负壮气 奋烈自有时

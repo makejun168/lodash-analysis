@@ -35,6 +35,7 @@
 	- intersectionWith 这个方法类似 _.intersection，区别是它接受一个 comparator 调用比较arrays中的元素。结果值是从第一数组中选择。comparator 会传入两个参数：(arrVal, othVal)。
 	- join 将 array 中的所有元素转换为由 separator 分隔的字符串。
 	- last 获取array中的最后一个元素。![](/static/img/check.png)
+	- lastIndexOf 使用等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。区别是它是从右到左遍历array的元素。
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
 	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。![](/static/img/check.png)
 

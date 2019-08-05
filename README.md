@@ -5,7 +5,7 @@
 
 ### 项目参考
 项目参考的是loadsh官网，文件的目录路径是根据官网API设计的
-项目代码参考和比较 lodash源码内容  
+项目代码参考和比较 lodash源码内容
 参考文档 <https://lodash.com/docs/>
 
 ### 项目重要提示
@@ -38,7 +38,7 @@
 	- lastIndexOf 使用等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。区别是它是从右到左遍历array的元素。
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
 	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。![](/static/img/check.png)
-
+	-
 
 ### 关于代码测试
 代码测试还没开始使用单元测试的工具进行检测，有提供单元测试的朋友也可以提交issues

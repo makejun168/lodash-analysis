@@ -38,7 +38,25 @@
 	- lastIndexOf 使用等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。区别是它是从右到左遍历array的元素。
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
 	- findIndex 该方法类似 _.find，区别是该方法返回第一个通过 predicate 判断为真值的元素的索引值（index），而不是元素本身。![](/static/img/check.png)
-	-
+	- nth 获取array数组的第n个元素。如果n为负数，则返回从数组结尾开始的第n个元素。
+	- pull 移除数组array中所有和给定值相等的元素，使用 SameValueZero 进行全等比较。
+	- pullAll 移除数组array中所有和给定值相等的元素，使用 SameValueZero 进行全等比较。，区别是这个方法接收一个要移除值的数组。
+	- pullAllBy 类似于 pullAll 区别是这个方法接受一个 iteratee（迭代函数） 调用 array 和 values的每个值以产生一个值，通过产生的值进行了比较。iteratee 会传入一个参数： (value)。
+	- pullAllWith 类似于 _.pullAll 区别是这个方法接受 comparator 调用array中的元素和values比较。comparator 会传入两个参数：(arrVal, othVal)。
+	- pullAt 根据索引 indexes，移除array中对应的元素，并返回被移除元素的数组。
+	- remove 移除数组中predicate（断言）返回为真值的所有元素，并返回移除元素组成的数组。predicate（断言） 会传入3个参数： (value, index, array)。
+	- reverse 反转array，使得第一个元素变为最后一个元素，第二个元素变为倒数第二个元素，依次类推。
+	- slice 裁剪数组array，从 start 位置开始到end结束，但不包括 end 本身的位置。
+	- sortedIndex 使用二进制的方式检索来决定 value值 应该插入到数组中 尽可能小的索引位置，以保证array的排序。
+	- sortedIndexBy 这个方法类似 _.sortedIndex ，除了它接受一个 iteratee （迭代函数），调用每一个数组（array）元素，返回结果和value 值比较来计算排序。iteratee 会传入一个参数：(value)。
+	- sortedIndexOf 这个方法类似 _.indexOf，除了它是在已经排序的数组array上执行二进制检索。
+	- sortedLastIndex 此方法类似于 _.sortedIndex，除了 它返回 value值 在 array 中尽可能大的索引位置（index）。
+	- sortedLastIndexBy 这个方法类似 _.sortedLastIndex ，除了它接受一个 iteratee （迭代函数），调用每一个数组（array）元素，返回结果和value 值比较来计算排序。iteratee 会传入一个参数：(value)。
+	- sortedLastIndexOf 这个方法类似 _.lastIndexOf，除了它是在已经排序的数组array上执行二进制检索。
+	- uniq 创建一个去重后的array数组副本。使用了 SameValueZero 做等值比较。只有第一次出现的元素才会被保留。
+	- sortedUniq 这个方法类似 _.uniq，除了它会优化排序数组。
+	- unionBy 这个方法类似 _.union ，除了它接受一个 iteratee （迭代函数），调用每一个数组（array）的每个元素以产生唯一性计算的标准。iteratee 会传入一个参数：(value)。
+	- sortedUniqBy 这个方法类似 _.uniqBy，除了它会优化排序数组。
 
 ### 关于代码测试
 代码测试还没开始使用单元测试的工具进行检测，有提供单元测试的朋友也可以提交issues

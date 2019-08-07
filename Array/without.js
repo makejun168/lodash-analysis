@@ -7,12 +7,12 @@ function without (arr, ...values) {
 	}
 	for (let value of array) {
 		let valuesIndex = valuesLength;
-			while (valuesIndex--) {
-				if (values[valuesIndex] === value) {
-					continue
-				}
+		while (valuesIndex--) {
+			if (values[valuesIndex] === value) {
+				continue
 			}
-			result.push(value)
+		}
+		result.push(value);
 	}
 	return result
 }

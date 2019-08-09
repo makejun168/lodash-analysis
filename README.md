@@ -77,6 +77,7 @@
 	- zipObjectDeep 这个方法类似 _.zipObject，除了它支持属性路径。
 	- zipWith 这个方法类似于 _.zip，不同之处在于它接受一个 iteratee（迭代函数），来 指定分组的值应该如何被组合。 该iteratee调用每个组的元素： (...group).
 
+- String
 ### 关于代码测试
 代码测试还没开始使用单元测试的工具进行检测，有提供单元测试的朋友也可以提交issues
 

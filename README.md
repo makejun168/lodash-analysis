@@ -1,23 +1,96 @@
 ## 项目介绍
 
-### 目的
+### 项目目的
 项目初衷是为了锻炼阅读源码，学习算法的能力。充实一下枯燥的代码生涯。本项目用于学习交流，并不是为了生产需要
+从零开始还原，lodash工具类，模仿lodash的方法,实现个人的工具类库
 
 ### 项目参考
 项目参考的是loadsh官网，文件的目录路径是根据官网API设计的
-项目代码参考和比较 lodash源码内容
+项目代码参考 和 比较 lodash 源码内容
 参考文档 <https://lodash.com/docs/>
+
+### 项目演示
+
+```javascript
+/**
+ *
+ * @category Array
+ * @param {Array} array The array to process.
+ * @param {number} [size=1] The length of each chunk
+ * @returns {Array} Returns the new array of chunks.
+ * @example
+ *
+ * chunk(['a', 'b', 'c', 'd'], 2)
+ * // => [['a', 'b'], ['c', 'd']]
+ *
+ * chunk(['a', 'b', 'c', 'd'], 3)
+ * // => [['a', 'b', 'c'], ['d']]
+ */
+
+function chunk(array, size) {
+	// 将size值保证为数字
+	// 前置的逻辑判断条件一致
+	size = Math.max(size);
+	const length = array == null ? 0 : array.length;
+	if (!length || size < 1) {
+		return [];
+	}
+	// 新建一个数组的长度为 数组长度 数组长度length / size 向上取整
+	const result = new Array(Math.ceil(length / size));
+	for (let i = 0; i < length; i+=size) {
+		result[i] = array.slice(i, i + size);
+	}
+
+	// 去除数组当中的 空的数组内容
+	const res = result.filter(itemArr => {
+		return itemArr.length > 0;
+	});
+	return res;
+}
+
+chunk(['a', 'b', 'c', 'd'], 3);
+
+```
+
+****
+
+```javascript
+
+// 官网源码
+
+function chunk(array, size) {
+	size = Math.max(size, 0);
+	const length = array == null ? 0 : array.length;
+	if (!length || size < 1) {
+		return [];
+	}
+	let index = 0;
+	let resIndex = 0;
+	const result = new Array(Math.ceil(length / size));
+
+	while (index < length) {
+		result[resIndex++] = slice(array, index, (index += size));
+	}
+	return result;
+}
+
+chunk(['a', 'b', 'c', 'd'], 3);
+
+```
 
 ### 项目重要提示
 本项目代码不能用作生产环境，仅供学习参考，欢迎学习交流，谢谢
+如若出现问题可以在issue中提出，我会及时留意
 
 
+
+### 项目路径
 - String
 	- camelCase 将字符串改成驼峰的形式输出，其他的特殊字符串删除
 	- toUpper 转换整个string字符串的字符为大写，类似 String#toUpperCase
 
 - Array
-    - chunk 将数组（array）拆分成多个 size 长度的区块
+    - chunk 将数组（array）拆分成多个 size 长度的区块 ![](/static/img/check.png)
 	- compact 创建一个新数组，包含原数组中所有的非假值元素。例如false, null, 0, "", undefined, 和 NaN 都是被认为是“假值”。 ![](/static/img/check.png)
 	- concat 创建一个新数组，将array与任何数组 或 值连接在一起。 (未实现 数组扁平化实现方式)
 	- difference 创建一个具有唯一array值的数组，每个值不包含在其他给定的数组中。![](/static/img/check.png)
@@ -84,6 +157,24 @@
 - String
 ### 关于代码测试
 代码测试还没开始使用单元测试的工具进行检测，有提供单元测试的朋友也可以提交issues
+
+- Date
+
+- Function
+
+- Math
+
+- Methods
+
+- Number
+
+- Object
+
+- Properties
+
+- Seq
+
+- Utils
 
 ### 结尾
 - 少年负壮气 奋烈自有时

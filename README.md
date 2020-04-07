@@ -12,6 +12,10 @@
 本项目代码不能用作生产环境，仅供学习参考，欢迎学习交流，谢谢
 
 
+- String
+	- camelCase 将字符串改成驼峰的形式输出，其他的特殊字符串删除
+	- toUpper 转换整个string字符串的字符为大写，类似 String#toUpperCase
+
 - Array
     - chunk 将数组（array）拆分成多个 size 长度的区块
 	- compact 创建一个新数组，包含原数组中所有的非假值元素。例如false, null, 0, "", undefined, 和 NaN 都是被认为是“假值”。 ![](/static/img/check.png)

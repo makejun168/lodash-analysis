@@ -1,14 +1,8 @@
-// import upperFirst from './upperFirst.js';
-import words from '../Utils/words.js';
-
 /**
- * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
  *
- * @since 3.0.0
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the camel cased string.
- * @see lowerCase, kebabCase, snakeCase, startCase, upperCase, upperFirst
  * @example
  *
  * camelCase('Foo Bar')
@@ -21,20 +15,17 @@ import words from '../Utils/words.js';
  * // => 'fooBar'
  */
 
-const toString = (value) => {
-	if (typeof value === 'string') {
-		return value
-	}
-	return value;
-};
-
 const camelCase = (string) => (
-	words(toString(string).replace(/['\u2019]/g, '')).reduce((result, word, index) => {
+	words(`${string}`.replace(/['\u2019]/g, '')).reduce((result, word, index) => {
 		word = word.toLowerCase();
-		return result +  word
+		console.log('result', result)
+		console.log('word', word)
+		return result + word
 	}, '')
-);
+)
 
-console.log(camelCase('--foo-bar--'));
+camelCase("--foo-bar--")
 
-export default camelCase
+// console.log(camelCase("--foo-bar--"));
+
+// export default camelCase;

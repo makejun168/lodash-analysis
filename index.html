@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Test</title>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<style>
+		.main {
+			width: 100%;
+			height: 100%;
+		}
+
+		.wrapper {
+			position: absolute;
+			margin: 0 auto;
+		}
+	</style>
+
+<body>
+	<div class="main">
+		<div class="wrapper">
+			<input id="url" type="text" placeholder="请输入url地址" onkeypress="return onKeyPress(event)">
+			<button onclick="openJSON()">打开json</button>
+			<div id="preview"></div>
+		</div>
+	</div>
+	<script>
+		function openJSON() {
+			var urlTxt = document.getElementById('url').value;
+			if (urlTxt == '') {
+				alert('请输入JSON url');
+				return false;
+			}
+			// 请求数据获取 json 文件 并且预览
+			download(urlTxt);
+		}
+
+		function onKeyPress(e) {
+			var keyCode = null;
+			if (e.which)
+				keyCode = e.which;
+			else if (e.keyCode)
+				keyCode = e.keyCode;
+			if (keyCode == 13) {
+				SendMessage();
+				return false;
+			}
+			return true;
+		}
+
+		function SendMessage() {
+			openJSON();
+		}
+
+		function download(url) {
+			$.ajax({
+				type: 'GET',
+				url: url,
+				dataType: 'jsonp',
+				jsonp: 'callback',
+				success: function(res) {
+					console.log(res);
+				}
+			})
+		}
+		// 	let newurl = url + "&";
+		// 	let fileName = url.slice(url.lastIndexOf("/") + 1, url.indexOf("?"));
+		// 	let result = '';
+		// 	fetch(newurl, {}, {credentials: "include" }).then(response => {
+		// 		console.log(response);
+		// 		// result = JSON.stringify(response);
+		// 		// console.log(result);
+		// 		// var datastr = `data:text/json;charset=utf-8,${result}`;
+		// 		// var downloadAnchorNode = document.createElement("a");
+		// 		// downloadAnchorNode.setAttribute("href", datastr);
+		// 		// downloadAnchorNode.setAttribute("download", fileName + ".json");
+		// 		// downloadAnchorNode.click();
+		// 		// downloadAnchorNode.remove();
+		// 	});
+		// }
+	</script>
+</body>
+
+</html>

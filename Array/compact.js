@@ -32,8 +32,6 @@
 // 	return result;
 // }
 
-
-
 function compact(array) {
 	const length = array == null ? 0 : array.length;
 	if (!length) {

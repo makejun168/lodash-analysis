@@ -107,10 +107,10 @@ chunk(['a', 'b', 'c', 'd'], 3);
 	- head 获取数组 array 的第一个元素。![](/static/img/check.png)
 	- indexOf 使用等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。![](/static/img/check.png)
 	- initial 获取数组array中除了最后一个元素之外的所有元素（去除数组array中的最后一个元素）。![](/static/img/check.png)
-	- intersection 创建唯一值的数组，这个数组包含所有给定数组都包含的元素，使用 SameValueZero 进行相等性比较。（可以理解为给定数组的交集）
-	- intersectionBy 这个方法类似 _.intersection，区别是它接受一个 iteratee 调用每一个arrays的每个值以产生一个值，通过产生的值进行了比较。结果值是从第一数组中选择。iteratee 会传入一个参数：(value)。
+	- intersection 创建唯一值的数组，这个数组包含所有给定数组都包含的元素，使用 SameValueZero 进行相等性比较。（可以理解为给定数组的交集）(❗)
+	- intersectionBy 这个方法类似 _.intersection，区别是它接受一个 iteratee 调用每一个arrays的每个值以产生一个值，通过产生的值进行了比较。结果值是从第一数组中选择。iteratee 会传入一个参数：(value)。(❗)
 	- intersectionWith 这个方法类似 _.intersection，区别是它接受一个 comparator 调用比较arrays中的元素。结果值是从第一数组中选择。comparator 会传入两个参数：(arrVal, othVal)。
-	- join 将 array 中的所有元素转换为由 separator 分隔的字符串。
+	- join 将 array 中的所有元素转换为由 separator 分隔的字符串。(❗)
 	- last 获取array中的最后一个元素。![](/static/img/check.png)
 	- lastIndexOf 使用等值比较，返回首次 value 在数组array中被找到的 索引值， 如果 fromIndex 为负值，将从数组array尾端索引进行匹配。区别是它是从右到左遍历array的元素。
 	- tail 获取除了array数组第一个元素以外的全部元素。![](/static/img/check.png)
